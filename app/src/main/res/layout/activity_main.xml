@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/topImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_student" />
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/topImage"
+                android:text="Mark Attendance"
+                android:background="@drawable/ic_attendance_icon"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/first"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:text="Show Attendance"
+                android:src="@drawable/ic_show"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/first"
+                android:layout_below="@id/topImage"
+                android:id="@+id/second"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:text="Home Work"
+                android:src="@drawable/ic_homework"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/second"
+                android:layout_below="@id/topImage"
+                android:id="@+id/third"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:text="Gallery"
+                android:src="@drawable/ic_gallery"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_below="@id/first"
+                android:id="@+id/gallery"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:text="Notice"
+                android:src="@drawable/ic_notice"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:id="@+id/notice"
+                android:layout_below="@id/third"
+                android:layout_toEndOf="@id/gallery"/>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:text="Pay Fee"
+                android:src="@drawable/ic_fee"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:id="@+id/fee"
+                android:layout_below="@id/gallery"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:text="About"
+                android:src="@drawable/ic_about"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_below="@id/notice"
+                android:layout_toEndOf="@id/fee"/>
+
+    </RelativeLayout>
